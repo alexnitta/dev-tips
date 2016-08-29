@@ -7,3 +7,7 @@ Tips and tricks to remember when developing software
 
 ## Vim
 * To remove blank lines (from Command mode): `:g/^$/d`, then `:x` to save and exit
+
+## Git
+* To delete a local branch: `git br -d <branchname>`
+* To then delete the remote branch: `git push <remote> :<branchname>`
