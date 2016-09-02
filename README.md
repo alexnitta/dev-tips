@@ -15,3 +15,6 @@ Tips and tricks to remember when developing software
 
 ## Local Filesystem
 * To create a symlink: `ln -s <alias> <realpath>`
+
+## Python
+* To check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
