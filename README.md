@@ -2,7 +2,7 @@
 Tips and tricks to remember when developing software
 
 ## Unix Server Admin
-* If you see an EACCESS error when you try to start Node on a server, it's usually because you didn't use `sudo` or because Node is already running. Using `sudo` is necessary because root privileges are required to expose ports below 1024. 
+* If you see an EACCESS error when you try to start Node on a server, it's usually because you didn't use `sudo` or because Node is already running. Using `sudo` is necessary because root privileges are required to expose ports below 1024.
 * To power off an Ubuntu server: `sudo shutdown -h now`
 
 ## Vim
@@ -15,6 +15,7 @@ Tips and tricks to remember when developing software
 
 ## Local Filesystem
 * To create a symlink: `ln -s <alias> <realpath>`
+* To count the number of files or directories in the current directory: `ls -1 | wc -l`
 
 ## Python
 * To check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
