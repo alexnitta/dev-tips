@@ -12,6 +12,7 @@ Tips and tricks to remember when developing software
 * To delete a local branch: `git br -d <branchname>`
 * To then delete the remote branch: `git push <remote> :<branchname>`
 * To temporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
+* Add the new commit to the previous one without changing the commit message: `git commit --amend --no-edit`
 
 ## Local Filesystem
 * To create a symlink: `ln -s <alias> <realpath>`
