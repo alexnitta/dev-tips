@@ -19,3 +19,7 @@ Tips and tricks to remember when developing software
 
 ## Python
 * To check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
+
+## RegEx
+* Finds variable definitions like `BIG_TEXT =` : `([A-Z\_]+)\s?=\s?\d+`
+* Finds two more more lines like `BIG_TEXT = 0`, as well as indented versions : `(^(\s{4})?([A-Z\_]+)\s*=\s*\d+\n){2,}`
