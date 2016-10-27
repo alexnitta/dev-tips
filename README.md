@@ -9,11 +9,12 @@ Tips and tricks to remember when developing software
 * To remove blank lines (from Command mode): `:g/^$/d`, then `:x` to save and exit
 
 ## Git
-* To delete a local branch: `git br -d <branchname>`
-* To then delete the remote branch: `git push <remote> :<branchname>`
-* To temporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
+* Delete a local branch: `git br -d <branchname>`
+* Delete the remote branch: `git push <remote> :<branchname>`
+* Remporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
 * Add the new commit to the previous one without changing the commit message: `git commit --amend --no-edit`
 * Remove untracked files from current branch: (to preview changes) `git clean -f -n` (to actually delete files) `git clean -f`
+* Preview changes before you pull: `git fetch` then `git diff origin/<branchname>`
 
 ## Local Filesystem
 * To create a symlink: `ln -s <target_path> <symlink_path>`
