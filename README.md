@@ -19,6 +19,7 @@ Tips and tricks to remember when developing software
 ## Local Filesystem
 * To create a symlink: `ln -s <target_path> <symlink_path>`
 * To count the number of files or directories in the current directory: `ls -1 | wc -l`
+* To view numerical permissions of files in current directory: `stat -c '%a %n' *`
 
 ## Python
 * To check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
