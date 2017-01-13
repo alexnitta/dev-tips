@@ -27,3 +27,6 @@ Tips and tricks to remember when developing software
 ## RegEx
 * Finds variable definitions like `BIG_TEXT =` : `([A-Z\_]+)\s?=\s?\d+`
 * Finds two more more lines like `BIG_TEXT = 0`, as well as indented versions : `(^(\s{4})?([A-Z\_]+)\s*=\s*\d+\n){2,}`
+
+## Mac OS
+* Prevent computer from sleeping: `pmset noidle`, then `CTRL-C` to cancel. [Wikipedia] (https://en.wikipedia.org/wiki/Pmset)
