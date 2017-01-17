@@ -12,7 +12,8 @@ Tips and tricks to remember when developing software
 
 ## Git
 * Delete a local branch: `git br -d <branchname>`
-* Delete the remote branch: `git push <remote> :<branchname>`
+* Delete the remote branch: `git br -dr <remote>/<branchname>`
+  * Example: `git br -dr origin/myawesomebranch`
 * Remporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
 * Add the new commit to the previous one without changing the commit message: `git commit --amend --no-edit`
 * Remove untracked files from current branch: (to preview changes) `git clean -f -n` (to actually delete files) `git clean -f`
