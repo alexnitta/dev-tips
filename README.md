@@ -7,6 +7,8 @@ Tips and tricks to remember when developing software
 
 ## Vim
 * To remove blank lines (from Command mode): `:g/^$/d`, then `:x` to save and exit
+* Go to a specific line number: `<line_number>G`
+* Go to the last line: `G`
 
 ## Git
 * Delete a local branch: `git br -d <branchname>`
