@@ -20,13 +20,15 @@ Tips and tricks to remember when developing software
 * Preview changes before you pull: `git fetch` then `git diff origin/<branchname>`
 
 ## Local Filesystem
-* To create a symlink: `ln -s <target_path> <symlink_path>`
-* To count the number of files or directories in the current directory: `ls -1 | wc -l`
-* To view numerical permissions of files in current directory: `stat -c '%a %n' *`
-* To search for a file by filename: `find <path> -name <filename>`
+* Create a symlink: `ln -s <target_path> <symlink_path>`
+* Count the number of files or directories in the current directory: `ls -1 | wc -l`
+* View numerical permissions of files in current directory: `stat -c '%a %n' *`
+* Search for a file by filename: `find <path> -name <filename>`
+* Search for a string within a file: `grep <string> <filename>`
+* Search for a string within all files in a directory and subdirectories: `grep -r <string> <directory>`
 
 ## Python
-* To check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
+* Check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
 
 ## RegEx
 * Finds variable definitions like `BIG_TEXT =` : `([A-Z\_]+)\s?=\s?\d+`
