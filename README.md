@@ -26,6 +26,8 @@ Tips and tricks to remember when developing software
 * Search for a file by filename: `find <path> -name <filename>`
 * Search for a string within a file: `grep <string> <filename>`
 * Search for a string within all files in a directory and subdirectories: `grep -r <string> <directory>`
+* See the difference between two directories of files, with visual diff of each line: `diff -bur <dir1/> <dir2/>`
+* See a list of the files that are different between two directories: `diff -qr <dir_one> <dir_two> | sort`
 
 ## Python
 * Check if a virtual environment is active: `pip -V` - the path will be in the project folder if a venv is running
