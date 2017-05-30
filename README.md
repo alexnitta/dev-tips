@@ -10,9 +10,10 @@ Tips and tricks to remember when developing software
 * Go to a specific line number: `<line_number>G`
 * Go to the last line: `G`
 * Search and replace examples
-  * `%s/\(^ERROR)\(\w\+\)/\1_\2/` search for lines beginning with ERROR, followed by one or more alphanumeric ('word') characters. Insert an underscore between the ERROR and the word characters.
+  * `:%s/\(^ERROR)\(\w\+\)/\1_\2/` search for lines beginning with ERROR, followed by one or more alphanumeric ('word') characters. Insert an underscore between the ERROR and the word characters.
     * `^ERROR` and `\w\+` are set up as backreferences with the `\(` before and `\)` after each one. The last portion, `/\1_\2/`, inserts an underscore between the first backreference `\1` and the second backreference `\2`.
-
+  * `:%s/\("[^",]\+\),\([^"]\+"\)/\1\\,\2/` search for commas appearing between double quotation marks and escape the commas with a preceding backslash.
+    * In the first parentheses, we match the opening double quotes then any number of characters that are not a comma. That is the meaning of `\("[^",]\+\)`. In the second parentheses, we match any number of characters that are not a double quote, and the closing double quote with `\([^"]\+"\)`. Finally, `/\1\\,\2/` inserts a `\\,` (escaped backslash and comman) between each of the backreferences, `\1` and `\2`.
 ## Git
 * Delete a local branch: `git br -d <branchname>`
 * Delete the remote branch: `git br -dr <remote>/<branchname>`
