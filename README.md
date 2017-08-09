@@ -14,14 +14,17 @@ Tips and tricks to remember when developing software
     * `^ERROR` and `\w\+` are set up as backreferences with the `\(` before and `\)` after each one. The last portion, `/\1_\2/`, inserts an underscore between the first backreference `\1` and the second backreference `\2`.
   * `:%s/\("[^",]\+\),\([^"]\+"\)/\1\\,\2/` search for commas appearing between double quotation marks and escape the commas with a preceding backslash.
     * In the first parentheses, we match the opening double quotes then any number of characters that are not a comma. That is the meaning of `\("[^",]\+\)`. In the second parentheses, we match any number of characters that are not a double quote, and the closing double quote with `\([^"]\+"\)`. Finally, `/\1\\,\2/` inserts a `\\,` (escaped backslash and comma) between each of the backreferences, `\1` and `\2`.
+
 ## Git
-* Delete a local branch: `git br -d <branchname>`
-* Delete the remote branch: `git br -dr <remote>/<branchname>`
-  * Example: `git br -dr origin/myawesomebranch`
+* Delete a local branch: `git branch -d <branchname>`
+* Delete the remote branch: `git branch -dr <remote>/<branchname>`
+  * Example: `git branch -dr origin/myawesomebranch`
 * Remporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
 * Add the new commit to the previous one without changing the commit message: `git commit --amend --no-edit`
 * Remove untracked files from current branch: (to preview changes) `git clean -f -n` (to actually delete files) `git clean -f`
 * Preview changes before you pull: `git fetch` then `git diff origin/<branchname>`
+* Fetch a remote branch into a new local branch: `git fetch <remote> <rbranch>:<lbranch>`, then `git checkout <lbranch>`
+* Interactively remove commits: `git rebase -i HEAD~N`, where N is the number of prior commits you want to review
 
 ## Local Filesystem
 * Create a symlink: `ln -s <target_path> <symlink_path>`
