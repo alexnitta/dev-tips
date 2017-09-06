@@ -25,6 +25,7 @@ Tips and tricks to remember when developing software
 * Preview changes before you pull: `git fetch` then `git diff origin/<branchname>`
 * Fetch a remote branch into a new local branch: `git fetch <remote> <rbranch>:<lbranch>`, then `git checkout <lbranch>`
 * Interactively remove commits: `git rebase -i HEAD~N`, where N is the number of prior commits you want to review
+* Show a list of files affected by a commit: `git show --pretty="" --name-only e2a7b36`
 
 ## Local Filesystem
 * Create a symlink: `ln -s <target_path> <symlink_path>`
