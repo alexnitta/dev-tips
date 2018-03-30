@@ -19,13 +19,14 @@ Tips and tricks to remember when developing software.
 * Delete a local branch: `git branch -d <branchname>`
 * Delete the remote branch: `git branch -dr <remote>/<branchname>`
   * Example: `git branch -dr origin/myawesomebranch`
-* Remporary save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
+* Temporarily save changes, revert to the previous commit, and apply changes in a new branch: `git stash` then `git stash branch <branchname>`
 * Add the new commit to the previous one without changing the commit message: `git commit --amend --no-edit`
 * Remove untracked files from current branch: (to preview changes) `git clean -f -n` (to actually delete files) `git clean -f`
 * Preview changes before you pull: `git fetch` then `git diff origin/<branchname>`
 * Fetch a remote branch into a new local branch: `git fetch <remote> <rbranch>:<lbranch>`, then `git checkout <lbranch>`
 * Interactively remove commits: `git rebase -i HEAD~N`, where N is the number of prior commits you want to review
 * Show a list of files affected by a commit: `git show --pretty="" --name-only e2a7b36`
+* Show the diff between two branches: `git diff <branch_1>..<branch_2>`
 
 ## Local Filesystem
 * Create a symlink: `ln -s <target_path> <symlink_path>`
