@@ -13,6 +13,7 @@ Tips and tricks to remember when developing software.
 * Interactively remove commits: `git rebase -i HEAD~N`, where N is the number of prior commits you want to review
 * Show a list of files affected by a commit: `git show --pretty="" --name-only e2a7b36`
 * Show the diff between two branches: `git diff <branch_1>..<branch_2>`
+* Show the diff between a specific file on two branches: `git diff <branch_1>..<branch_2> -- <filename>`
 * Show the file names that changed between two branches: `git diff --name-only <branch_1>..<branch_2>`
 
 ## Sublime RegEx
