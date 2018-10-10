@@ -43,6 +43,11 @@ Tips and tricks to remember when developing software.
 * Finds variable definitions like `BIG_TEXT =` : `([A-Z\_]+)\s?=\s?\d+`
 * Finds two more more lines like `BIG_TEXT = 0`, as well as indented versions : `(^(\s{4})?([A-Z\_]+)\s*=\s*\d+\n){2,}`
 * Finds a given import from a given module, even if other imports are included: `import[\w\s,\{]+takeEvery[\w\s,\}]+from 'redux-saga'`
+* Use Find and Replace with capture groups to select parts of a regex pattern and reformat them
+    
+    | Text | Find | Replace | Result |
+    | --- | --- | --- | --- |
+    | `028  Antigua and Barbuda` | `^(\d{3})\s{1}(.*)$` | `("$1", "$2"),` | `("028", "Antigua and Barbuda"),` |
 
 ## Mac OS
 * Prevent computer from sleeping: `pmset noidle`, then `CTRL-C` to cancel. [Wikipedia] (https://en.wikipedia.org/wiki/Pmset)
